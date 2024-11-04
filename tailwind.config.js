@@ -1,9 +1,17 @@
 /** @type {import('tailwindcss').Config} */
-// eslint-disable-next-line no-undef
 module.exports = {
-  content: ["./disk/*.{html,js}"],
+  content: ["./disk/**/*.{html,js}"],
   theme: {
     extend: {},
+    animation: {
+      gradient: 'gradient 5s ease infinite'
+    }
+    keyframes: {
+      gradient: {
+        '0%': {backgroundPosition: 0% 50% },
+        '100%': {backgoundPosition: '100% 50%'}
+      }
+    }
   },
   plugins: [],
 };

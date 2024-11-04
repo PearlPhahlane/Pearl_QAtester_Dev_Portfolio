@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pearl Phahlane | Frontend Dev Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-    <h1 class="bg-green-500">Hello Pearl</h1>
+<body class="bg-gradient-to-r from-pink-300 to to-pink-600 via-blue-200 to-purple-300 bg-[length:200%_150%] animate-gradient">
+    <div class="flex items-center justify-center">
+        <h1 class="text-black text-4xl bold ">Hello Pearl</h1>
+    </div>
+    
 </body>
 </html>
