@@ -20,9 +20,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="bg-pink-100">
-<div id="container">
+<div id="container" class="p-4 box-border">
 <!--Theme Toggle button -->
-    <nav>
+    <nav class="p-1 relative flex justify-end">
         <button id="theme-toggle">
             <i class="fa-solid fa-toggle-off"></i>
         </button>
@@ -30,21 +30,21 @@
 
 <!-- Contact-->
 
-    <div id="contact-links" class="">
+    <div id="contact-links" class="fixed p-1 mt-2 text-center flex flex-col">
         <a href="https://github.com/PearlPhahlane" target="_blank"><i class="fa-brands fa-github"></i></a>
         <a href="https://www.linkedin.com/in/pearl-motaung-9aa607104/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         <a href="mailto:pearlulumotaung@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
     </div>
 
  <!--Main--->  
-<main>
+<main class="relative p-1 m-auto w-5/6 ">
 
     <!--name, image, intro-->
 
-        <div id="about">
-            <div id="main-heading">Pearl Phahlane</div>
-            <img src="Pearl.png" class="rounded-full">
-            <p class=" flex ">Hello! I’m Pearl, a junior front-end developer with hands-on experience in JavaScript, HTML, and CSS. 
+        <div id="about" class="p-2 mb-2 relative flex-col justify-center ">
+            <div id="main-heading" class="text-7xl w-4/12 mb-4">Pearl Phahlane</div>
+            <img src="Pearl.png" class="rounded-full mb-4 ">
+            <p class="p-2">Hello! I’m Pearl, a junior front-end developer with hands-on experience in JavaScript, HTML, and CSS. 
                 I’ve built dynamic applications like task management tools and virtual pet adoption platforms. With a background in training and virtual assistance, 
                 I bring strong problem-solving skills and a passion for writing clean code. Currently, I’m completing a 6-month Software Development Program at CodeSpace, 
                 where I’ve developed a solid foundation in web development. I’m eager to 
@@ -54,60 +54,60 @@
         <!-- create blocks around skills and add a slide up animation-->
 
         <div id="skills">
-            <div id="skills-heading">SKILLS</div>
-            <div id="all-skills-blocks">
+            <div id="skills-heading" class="text-7xl ">SKILLS</div>
+            <div id="all-skills-blocks" class="grid grid-cols-2 p-1">
 
                 <!--HTML-->
-                <div id="skill-block">
-                    <span id="heading-skill-block">HTML5</span>
-                        <div id="progress-line-animation">
-                        <div id="progress-html"></div>
+                <div id="skill-block" class="p-1">
+                    <span id="heading-skill-block" class="text-xl">HTML5</span>
+                        <div id="progress-line-animation" class="mt-2 flex items-center justify-between p-1">
+                        <div id="progress-html" class="w-full"></div>
                         <span>100%</span>
                     </div>
                 </div>
 
                 <!--CSS-->
-                <div id="skill-block">
-                    <span id="heading-skill-block">CSS</span>
-                        <div id="progress-line-animation">
-                        <div id="progress-CSS"></div>
+                <div id="skill-block" >
+                    <span id="heading-skill-block" class="text-xl">CSS</span>
+                        <div id="progress-line-animation" class="mt-2 flex items-center justify-between p-1">
+                        <div id="progress-CSS" class="w-full"></div>
                         <span>100%</span>
                     </div>
                 </div>
 
                 <!--Tailwind CSS-->
-                <div id="skill-block">
-                    <span id="heading-skill-block">Tailwind CSS</span>
-                        <div id="progress-line-animation">
-                        <div id="progress-tailwind"></div>
+                <div id="skill-block" class="p-1">
+                    <span id="heading-skill-block" class="text-xl">Tailwind CSS</span>
+                        <div id="progress-line-animation" class="mt-2 flex items-center justify-between p-1">
+                        <div id="progress-tailwind" class="w-5/6"></div>
                         <span>85%</span>
                     </div>
                 </div>
 
             
                 <!--JavaScript-->
-                <div id="skill-block">
-                    <span id="heading-skill-block">JavaScript</span>
-                        <div id="progress-line-animation">
-                        <div id="progress-JS"></div>
-                        <span>95%</span>
+                <div id="skill-block" class="p-1">
+                    <span id="heading-skill-block" class="text-xl">JavaScript</span>
+                        <div id="progress-line-animation" class="mt-2 flex items-center justify-between p-1">
+                        <div id="progress-JS" class="w-11/12"></div>
+                        <span>90%</span>
                     </div>
                 </div>
                 
                 <!--React-->
-                <div id="skill-block">
-                    <span id="heading-skill-block">React</span>
-                        <div id="progress-line-animation">
-                        <div id="progress-react"></div>
+                <div id="skill-block" class="p-1">
+                    <span id="heading-skill-block" class="text-xl">React</span>
+                        <div id="progress-line-animation" class="mt-2 flex items-center justify-between p-1">
+                        <div id="progress-react" class="w-6/12"></div>
                         <span>50%</span>
                     </div>
                 </div>
 
                 <!--GIT AND GITHUB-->
-                <div id="skill-block">
-                    <span id="heading-skill-block">Git and GitHub for version control</span>
-                        <div id="progress-line-animation">
-                        <div id="progress-GIT"></div>
+                <div id="skill-block" class="p-1">
+                    <span id="heading-skill-block" class="text-xl">Git and GitHub for version control</span>
+                        <div id="progress-line-animation" class="mt-2 flex items-center justify-between p-1">
+                        <div id="progress-GIT" class="w-full"></div>
                         <span>100%</span>
                     </div>
                 </div>
