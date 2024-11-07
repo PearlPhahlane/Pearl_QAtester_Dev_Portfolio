@@ -21,45 +21,28 @@
 </head>
 <body class="bg-gradient-to-r from-orange-400 to to-green-300 via-purple-300 bg-[length:200%_150%] animate-gradient"></body>
 <div id="container">
-    <!--Theme Toggle button -->
+<!--Theme Toggle button -->
     <nav>
         <button id="theme-toggle">
             <i class="fa-solid fa-toggle-off"></i>
         </button>
     </nav>
 
-    <!-- Contact-->
+<!-- Contact-->
 
     <div id="contact-links" class="">
         <a href="https://github.com/PearlPhahlane" target="_blank"><i class="fa-brands fa-github"></i></a>
         <a href="https://www.linkedin.com/in/pearl-motaung-9aa607104/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         <a href="mailto:pearlulumotaung@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
     </div>
-    
-    <!-- Name -->
-    <div class="flex items-center justify-center py-10">
-        <h1 class="text-black text-4xl bold">Pearl Phahlane</h1>
-    </div>
 
-    <div class="flex space-x-4 py-4 items-center justify-center ">
-        <a href=""><i class="fa-brands fa-github"></i></a>
-        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-        <a href=""><i class="fa-solid fa-envelope"></i></a>
-    </div>
-    
-    <div class="flex space-x-3 items-center justify-center">
-        <nav>About |</nav>
-        <nav>Projects |</nav>
-        <nav>Skills |</nav>
-        <nav>Education</nav>
-    </div>
-       
-    <div class= "flex py-8 items-center justify-center">
-        <a href=""><i class="fa-solid fa-angles-down"></i></a>
-    </div>
+ <!--Main--->  
+<main>
 
-    <main class="flex flex-col items-center justify-center h-full">
-        <div id="about" class="text-center mb-8">
+    <!--name, image, intro-->
+
+        <div id="about">
+            <div id="main-heading">Pearl Phahlane</div>
             <img src="Pearl.png" class="rounded-full">
             <p class=" flex ">Hello! I’m Pearl, a junior front-end developer with hands-on experience in JavaScript, HTML, and CSS. 
                 I’ve built dynamic applications like task management tools and virtual pet adoption platforms. With a background in training and virtual assistance, 
@@ -67,37 +50,99 @@
                 where I’ve developed a solid foundation in web development. I’m eager to 
                 transition into a full-time role in JavaScript development and contribute to innovative digital solutions.</p>
         </div>
+    
+        <!-- create blocks around skills and add a slide up animation-->
 
-        <div id="skills" class="text-center mb-8">
-            <h3>Technical Skills:</h3>
-            <ul>
-                <li>HTML, CSS, JavaScript (including experience with Tailwind CSS)</li>
-                <li>Git and GitHub for version control</li>
-                <li>React</li>
-            </ul>
+        <div id="skills">
+            <div id="skills-heading">SKILLS</div>
+            <div id="all-skills-blocks">
 
-             <h3>Soft Skills:</h3>
-            <ul>
-                <li>Problem-solving and critical thinking</li>
-                <li>Communication and interpersonal skills</li>
-                <li>Project management and collaboration</li>
-                <li>Adaptability and continuous learning</li>
-            </ul>
+                <!--HTML-->
+                <div id="skill-block">
+                    <span id="heading-skill-block">HTML5</span>
+                        <div id="progress-line-animation">
+                        <div id="progress-html"></div>
+                        <span>100%</span>
+                    </div>
+                </div>
+
+                <!--CSS-->
+                <div id="skill-block">
+                    <span id="heading-skill-block">CSS</span>
+                        <div id="progress-line-animation">
+                        <div id="progress-CSS"></div>
+                        <span>100%</span>
+                    </div>
+                </div>
+
+                <!--Tailwind CSS-->
+                <div id="skill-block">
+                    <span id="heading-skill-block">Tailwind CSS</span>
+                        <div id="progress-line-animation">
+                        <div id="progress-tailwind"></div>
+                        <span>85%</span>
+                    </div>
+                </div>
+
+            
+                <!--JavaScript-->
+                <div id="skill-block">
+                    <span id="heading-skill-block">JavaScript</span>
+                        <div id="progress-line-animation">
+                        <div id="progress-JS"></div>
+                        <span>95%</span>
+                    </div>
+                </div>
+                
+                <!--React-->
+                <div id="skill-block">
+                    <span id="heading-skill-block">React</span>
+                        <div id="progress-line-animation">
+                        <div id="progress-react"></div>
+                        <span>50%</span>
+                    </div>
+                </div>
+
+                <!--GIT AND GITHUB-->
+                <div id="skill-block">
+                    <span id="heading-skill-block">Git and GitHub for version control</span>
+                        <div id="progress-line-animation">
+                        <div id="progress-GIT"></div>
+                        <span>100%</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div id="education" class="text-center mb-8">
-            <h3>Education</h3>
-            <ul>
-                <li>
-                    <strong>Software Development Program</strong> - CodeSpace (2024)
-                </li>
-                <li>
-                    <strong>BA Communications</strong> - University of South Africa (2017)
-                </li>
-            </ul>
+    <!--Education-->
+        <div id="education" >
+            <div id="education-heading">EDUCATION</div>
+            <div id="education-main">
+                <div id="education-sub">
+                    <div id="animate-flip-down">
+                        <span id="edu-block-heading">CodeSpace</span>
+                        <p>Software Development Program 
+                            <br>
+                            (2024)
+                        </p>
+                    </div>
+                </div>
+
+                <div id="education-sub">
+                    <div id="animate-flip-down">
+                        <span id="edu-block-heading">University of South Africa</span>
+                        <p>Bachelor of Arts: Commmunication
+                            <br>
+                            (2017)
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
 
+ <!--Projects-->       
         <div id="projects">
+            <div id="heading-Proj">PROJECTS</div>
             <ul>
                 <li>
                     <strong>Kanban Task Management App</strong>: A task management tool with theme 
@@ -114,8 +159,11 @@
                 </li>
             </ul>
         </div>
-    </main>
+
+</main>
 </div>
 
+<!--Footer-->
+<footer>I'm not just coding - I'm creating the future</footer>
 </body>
 </html>
