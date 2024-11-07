@@ -24,17 +24,18 @@
 <!--Theme Toggle button -->
     <nav class="p-1 relative flex justify-end">
         <button id="theme-toggle">
-            <i class="fa-solid fa-toggle-off"></i>
+            <i class="fa-solid fa-toggle-off md:text-2xl"></i>
         </button>
     </nav>
 
 <!-- Contact-->
 
-    <div id="contact-links" class="fixed p-1 mt-2 text-center flex flex-col">
-        <a href="https://github.com/PearlPhahlane" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/pearl-motaung-9aa607104/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="mailto:pearlulumotaung@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+    <div class="fixed right-4 top-1/2 transform -translate-y-1/2 space-y-4 hidden md:block">
+        <a href="https://github.com/PearlPhahlane" target="_blank" class="block"><i class="fa-brands fa-github sm:text-3xl md:text-2xl"></i></a>
+        <a href="https://www.linkedin.com/in/pearl-motaung-9aa607104/" target="_blank" class="block"><i class="fa-brands fa-linkedin sm:text-3xl md:text-2xl"></i></a>
+        <a href="mailto:pearlulumotaung@gmail.com" target="_blank" class="block"><i class="fa-solid fa-envelope sm:text-3xl md:text-2xl"></i></a>
     </div>
+
 
  <!--Main--->  
 <main class="relative p-1 m-auto w-5/6 ">
@@ -188,6 +189,13 @@
         </div>
 
 </main>
+</div>
+
+<!-- Contact Icons For small screens -->
+<div class="flex flex-row md:hidden bottom-0 w-full space-x-10 justify-center mb-4">
+    <a href="https://github.com/PearlPhahlane" target="_blank" class="block"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/pearl-motaung-9aa607104/" target="_blank" class="block"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="mailto:pearlulumotaung@gmail.com" target="_blank" class="block"><i class="fa-solid fa-envelope"></i></a>
 </div>
 
 <!--Footer-->
