@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (width < target) {
         width++;
         bar.style.width = width + "%";
-        setTimeout(increaseWidth, 10); // Adjust timing for speed
+        setTimeout(increaseWidth, 10); 
       }
     }
     increaseWidth();
