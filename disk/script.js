@@ -51,27 +51,33 @@ document.addEventListener("DOMContentLoaded", function () {
   const themeToggleButton = document.getElementById("theme-toggle");
   const iconLight = document.getElementById("icon-light");
   const iconDark = document.getElementById("icon-dark");
+  const htmlElement = document.documentElement; // Target the <html> element
 
-  themeToggleButton.addEventListener("click", function () {
-    document.documentElement.classList.toggle("dark"); // Toggles dark mode class on <html>
-
-    // Toggle the icons
-    iconLight.classList.toggle("hidden");
-    iconDark.classList.toggle("hidden");
-  });
-
-  // Optional: Persist dark mode across page reloads
-  if (localStorage.getItem("theme") === "dark") {
-    document.documentElement.classList.add("dark");
+  // Check for saved theme preference in localStorage
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+    htmlElement.classList.add("dark"); // Apply dark mode if saved
     iconLight.classList.add("hidden");
     iconDark.classList.remove("hidden");
+  } else {
+    htmlElement.classList.remove("dark"); // Apply light mode if saved
+    iconLight.classList.remove("hidden");
+    iconDark.classList.add("hidden");
   }
 
+  // Add event listener to toggle theme on button click
   themeToggleButton.addEventListener("click", function () {
-    const isDarkMode = document.documentElement.classList.contains("dark");
+    const isDarkMode = htmlElement.classList.toggle("dark");
+
+    // Toggle icons visibility
+    iconLight.classList.toggle("hidden", isDarkMode);
+    iconDark.classList.toggle("hidden", !isDarkMode);
+
+    // Save theme preference in localStorage
     localStorage.setItem("theme", isDarkMode ? "dark" : "light");
   });
 });
+
 
 
 document.addEventListener("DOMContentLoaded", function () {

@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./disk/**/*.{html,js}"],
-  darkMode: 'class',
+  darkMode: "class",
   theme: {
     extend: {
       keyframes: {
@@ -13,7 +13,8 @@ module.exports = {
       animation: {
         swipeUp: 'swipeUp 0.8s ease-out forwards',
       },
+    },
   },
   plugins: [],
-},
 }
+
