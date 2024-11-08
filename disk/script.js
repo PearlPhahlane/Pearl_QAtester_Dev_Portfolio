@@ -101,3 +101,17 @@ document.addEventListener("DOMContentLoaded", function () {
   observer.observe(progressReact);
   observer.observe(progressGit);
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const educationSection = document.getElementById("education");
+
+  const observer = new IntersectionObserver ((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        educationSection.classList.add("animate-swipeUp", "opacity-100", "translate-y-0");
+        observer.unobserve(educationSection); //stop observing after animation
+      }
+    });
+  }, {threshold: 0.2});
+  observer.observe(educationSection)
+})
