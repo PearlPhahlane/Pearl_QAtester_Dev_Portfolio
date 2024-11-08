@@ -9,7 +9,7 @@ function type() {
         } else {
             return false;
         }
-        setTimeout(looping, 500);
+        setTimeout(looping, 400);
     }
     looping()
 }
@@ -30,6 +30,20 @@ type()
 type()*/
 
 
+
+document.addEventListener("DOMContentLoaded", function () {
+  const img = document.getElementById("fade-image");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if(entry.isIntersecting) {
+        img.style.opacity = 1 ;
+        observer.unobserve(img); //stop onserving after fade-in
+      }
+    });
+  }, {threshold: 0.5});
+  observer.observe(img);
+});
 
 document.addEventListener("DOMContentLoaded", function () {
   // Function to animate the progress bar to its target width
