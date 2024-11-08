@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./disk/**/*.{html,js}"],
+  darkMode: 'class',
   theme: {
     extend: {
       keyframes: {

@@ -45,6 +45,35 @@ document.addEventListener("DOMContentLoaded", function () {
   observer.observe(img);
 });
 
+//Theme Toggle
+
+document.addEventListener("DOMContentLoaded", function () {
+  const themeToggleButton = document.getElementById("theme-toggle");
+  const iconLight = document.getElementById("icon-light");
+  const iconDark = document.getElementById("icon-dark");
+
+  themeToggleButton.addEventListener("click", function () {
+    document.documentElement.classList.toggle("dark"); // Toggles dark mode class on <html>
+
+    // Toggle the icons
+    iconLight.classList.toggle("hidden");
+    iconDark.classList.toggle("hidden");
+  });
+
+  // Optional: Persist dark mode across page reloads
+  if (localStorage.getItem("theme") === "dark") {
+    document.documentElement.classList.add("dark");
+    iconLight.classList.add("hidden");
+    iconDark.classList.remove("hidden");
+  }
+
+  themeToggleButton.addEventListener("click", function () {
+    const isDarkMode = document.documentElement.classList.contains("dark");
+    localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+  });
+});
+
+
 document.addEventListener("DOMContentLoaded", function () {
   // Function to animate the progress bar to its target width
   function animateProgress(bar) {
