@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
   progressHtml.setAttribute("data-target", "100");
   progressCss.setAttribute("data-target", "100");
   progressTailwind.setAttribute("data-target", "85");
-  progressJavaScript.setAttribute("data-target", "65");
+  progressJavaScript.setAttribute("data-target", "85");
   progressReact.setAttribute("data-target", "50");
   progressGit.setAttribute("data-target", "100");
 
