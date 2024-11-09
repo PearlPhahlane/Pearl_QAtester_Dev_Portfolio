@@ -1,3 +1,5 @@
+//Name Type Writer Effect 
+
 function type() {
     let myName = "Pearl Phahlane"
     let nameArr = myName.split("");
@@ -15,33 +17,23 @@ function type() {
 }
 type()
 
-/*function deleting(){
-
-    nameVisible = document.getElementById("main-heading").innerHTML.split("");
-    if(nameVisible.length>0){
-        nameVisible.pop();
-        document.getElementById("main-heading").innerHTML = nameVisible.join("");
-    } else {
-        type();
-        return false
-    }
-    setTimeout(deleting,500)
-}
-type()*/
-
-
+//Image Bounce Effect
 
 document.addEventListener("DOMContentLoaded", function () {
-  const img = document.getElementById("fade-image");
+  const img = document.getElementById("bounce-image");
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if(entry.isIntersecting) {
-        img.style.opacity = 1 ;
-        observer.unobserve(img); //stop onserving after fade-in
-      }
-    });
-  }, {threshold: 0.5});
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          img.classList.add("animate-bounce-three"); // Add bounce class to trigger animation
+          observer.unobserve(img); // Stop observing after bounce-in
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
   observer.observe(img);
 });
 
@@ -78,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
+//Progress Bars 
 
 document.addEventListener("DOMContentLoaded", function () {
   // Function to animate the progress bar to its target width
@@ -136,6 +128,9 @@ document.addEventListener("DOMContentLoaded", function () {
   observer.observe(progressReact);
   observer.observe(progressGit);
 });
+
+
+//Education Swipe Up Animation
 
 document.addEventListener("DOMContentLoaded", function() {
   const educationSection = document.getElementById("education");
