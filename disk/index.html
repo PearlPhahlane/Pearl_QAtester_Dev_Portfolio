@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pearl Phahlane | Frontend Dev Portfolio</title>
+    <title>Pearl Phahlane | QA Tester/Frontend Dev Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -52,11 +52,10 @@
             <div id="about" class="p-2 mb-2 relative flex-col justify-center ">
                 <div id="main-heading" class="text-7xl w-4/12 mb-4  dark:text-gray-300"></div>
                 <img id="bounce-image" src="../disk/assets/Pearl.png" class="rounded-full mb-8">
-                <p class="p-2 mt-8 mb-8  dark:text-gray-300">Hello! I’m Pearl, a junior front-end developer with hands-on experience in JavaScript, HTML, and CSS. 
-                    I’ve built dynamic applications like task management tools and virtual pet adoption platforms. With a background in training and virtual assistance, 
-                    I bring strong problem-solving skills and a passion for writing clean code. Currently, I’m completing a 6-month Software Development Program at CodeSpace, 
-                    where I’ve developed a solid foundation in web development. I’m eager to 
-                    transition into a full-time role in JavaScript development and contribute to innovative digital solutions.</p>
+                <p class="p-2 mt-8 mb-8  dark:text-gray-300">Hello! I’m Pearl, I am an <strong>ISTQB-certified Software Tester</strong> with 8 months of software development experience. I have strong analytical and problem-solving skills, a keen eye for detail, 
+                    and a passion for ensuring software quality. I have completed a Jira course on manual testing and am currently learning how to conduct test automation using Selenium WebDriver to expand my skill set. 
+                    My expertise includes writing and executing test cases, identifying defects, and collaborating with developers to enhance product reliability. I am eager to apply my skills in a software testing role and 
+                    contribute to delivering high-quality digital solutions.</p>
             </div>
         
             <!-- create blocks around skills and add a slide up animation-->
@@ -65,9 +64,27 @@
                 <div id="skills-heading" class="text-5xl mt-4 mb-8  dark:text-gray-300">SKILLS</div>
                 <div id="all-skills-blocks" class="grid sm:grid-cols-1 md:grid-cols-2 p-1">
 
+                    <!--Manual Testing Using Jira-->
+                    <div id="skill-block" class="p-1">
+                        <span id="heading-skill-block" class="text-xl  dark:text-gray-300">Manual Testing Using Jira</span>
+                            <div id="progress-line-animation" class="mt-2 flex items-center justify-between p-1 border border-black  dark:border-gray-300  dark:text-gray-300">
+                            <div id="progress-html" class="w-full h-4 bg-stone-900  dark:bg-slate-300"></div>
+                            <span>100%</span>
+                        </div>
+                    </div>
+
                     <!--HTML-->
                     <div id="skill-block" class="p-1">
                         <span id="heading-skill-block" class="text-xl  dark:text-gray-300">HTML5</span>
+                            <div id="progress-line-animation" class="mt-2 flex items-center justify-between p-1 border border-black  dark:border-gray-300  dark:text-gray-300">
+                            <div id="progress-html" class="w-full h-4 bg-stone-900  dark:bg-slate-300"></div>
+                            <span>100%</span>
+                        </div>
+                    </div>
+
+                    <!--Chrome DevTools-->
+                    <div id="skill-block" class="p-1">
+                        <span id="heading-skill-block" class="text-xl  dark:text-gray-300">Chrome DevTools</span>
                             <div id="progress-line-animation" class="mt-2 flex items-center justify-between p-1 border border-black  dark:border-gray-300  dark:text-gray-300">
                             <div id="progress-html" class="w-full h-4 bg-stone-900  dark:bg-slate-300"></div>
                             <span>100%</span>
@@ -93,23 +110,15 @@
                     </div>
 
                 
-                    <!--JavaScript-->
+                    <!--JavaScript & React-->
                     <div id="skill-block" class="p-1">
-                        <span id="heading-skill-block" class="text-xl dark:text-gray-300">JavaScript</span>
+                        <span id="heading-skill-block" class="text-xl dark:text-gray-300">JavaScript & React</span>
                             <div id="progress-line-animation" class="mt-2 flex items-center justify-between p-1 border border-black  dark:text-gray-300  dark:border-gray-300 ">
                             <div id="progress-JS" class="w-5/6 h-4 bg-stone-900  dark:bg-slate-300"></div>
                             <span>85%</span>
                         </div>
                     </div>
-                    
-                    <!--React-->
-                    <div id="skill-block" class="p-1">
-                        <span id="heading-skill-block" class="text-xl dark:text-gray-300">React</span>
-                            <div id="progress-line-animation" class="mt-2 flex items-center justify-between p-1 border border-black  dark:text-gray-300  dark:border-gray-300 ">
-                            <div id="progress-react" class="w-6/12 h-4 bg-stone-900  dark:bg-slate-300"></div>
-                            <span>50%</span>
-                        </div>
-                    </div>
+            
 
                     <!--GIT AND GITHUB-->
                     <div id="skill-block" class="p-1">
@@ -122,10 +131,29 @@
                 </div>
             </div>
 
-        <!--Education-->
+        <!--Education & Certifications-->
             <div id="education" class="opacity-0 transform translate-y-12 transition duration-500">
-                <div id="education-heading" class="text-5xl mt-12 mb-12  dark:text-gray-300">EDUCATION</div>
+                <div id="education-heading" class="text-5xl mt-12 mb-12  dark:text-gray-300">EDUCATION & CERTIFICATIONS</div>
                 <div id="education-main" class="mt-4 p-1 pl-24">
+                    <div id="education-sub" class="flex-col">
+                        <div id="animate-flip-down" class="p-1 mb-8">
+                            <span id="edu-block-heading" class="text-2xl dark:text-gray-300">ISTQB</span>
+                            <p class="dark:text-gray-300">ISTQB Certified Tester Foundation Level  
+                                <br>
+                                score: 87.5% (2 Feburary 2025)
+                            </p>
+                        </div>
+
+                        <div id="education-sub" class="flex-col">
+                        <div id="animate-flip-down" class="p-1 mb-8">
+                            <span id="edu-block-heading" class="text-2xl dark:text-gray-300">Udemy</span>
+                            <p class="dark:text-gray-300">Jira Manual Testing Certificate 
+                                <br>
+                                (7 Feburary 2025)
+                            </p>
+                        </div>
+                    </div>
+                    
                     <div id="education-sub" class="flex-col">
                         <div id="animate-flip-down" class="p-1 mb-8">
                             <span id="edu-block-heading" class="text-2xl dark:text-gray-300">CodeSpace</span>
@@ -157,7 +185,7 @@
                     <div class="border-2 border-slate-700 border-dotted rounded-xl p-4 hover:bg-violet-600 hover:scale-105 transform transition-all duration-200">
                         <h2 class="text-xl font-bold mb-2">Kanban Task Management App</h2>
                         <p class="mb-4"><strong>Overview:</strong> This app organizes tasks visually on a board, allowing users to create, move, and prioritize tasks across different columns (like "To Do," "In Progress," and "Done"). It’s designed to streamline project management, providing users with a clear overview of task progress.</p>
-                        <p class="mb-4"><strong>Skills Gained:</strong> I developed skills in JavaScript for dynamic functionality, handling event-driven programming to manage task updates, and DOM manipulation to support a responsive, interactive UI. I also practiced using CSS for layout design and state management to handle task data effectively across different board columns.</p>
+                        <p class="mb-4"><strong>Skills Gained:</strong> I developed skills in JavaScript for dynamic functionality, handling event-driven programming to manage task updates, and DOM manipulation to support a responsive, interactive UI. I also practiced using CSS for layout design and state management to handle task data effectively across different board columns. Throughout the development process, I adopted a <strong>Test-Driven Development (TDD) approach</strong>, writing tests before code implementation to ensure robust and reliable functionality, catching bugs early, and improving overall code quality.</p>
                         <a href="https://github.com/PearlPhahlane/CS20240132_wfo2407_A1_Pearl-Phahlane_JSL11.git" target="_blank">
                             <img src="../disk/assets/task-mangement-app.png" alt="task-management-app">
                         </a>
@@ -167,7 +195,7 @@
                     <div class="border-2  border-slate-700 border-dotted rounded-xl p-4 hover:bg-violet-600 hover:scale-105 transform transition-all duration-200">
                         <h2 class="text-xl font-bold mb-2">Virtual Pet Adoption Website</h2>
                         <p class="mb-4"><strong>Overview:</strong> This website simulates the experience of adopting a pet, allowing users to explore and adopt various animals with details such as pet names, types, and needs. It provides a friendly, engaging interface for potential adopters.</p>
-                        <p class="mb-4"><strong>Skills Gained:</strong> This project helped me develop skills in form handling and data validation to ensure user input accuracy, as well as HTML and CSS to build an appealing, accessible layout. I also worked with JavaScript to manage the adoption process, enhancing my experience with user interactions and conditional rendering to customize the user journey.</p>
+                        <p class="mb-4"><strong>Skills Gained:</strong> I used an <strong>Exploratory Testing approach</strong> to validate the functionality of the validateSyntax function. I manually tested the input by entering various pet adoption details into the input field, ensuring that the function correctly identified valid and invalid syntax based on the pattern specified ("pet_" followed by letters and numbers). I debugged and refined the code as needed, using the browser console to inspect and resolve any issues.</p>
                         <a href="https://github.com/PearlPhahlane/Module_1_CS20240132_wfo2407_A1_Pearl-Phahlane_JSL01.git" target="_blank">
                             <img src="../disk/assets/Pet-adoption website.png" alt="pet-adoption-website">
                         </a>
@@ -177,7 +205,7 @@
                     <div class="border-2 border-slate-700 border-dotted rounded-xl p-4 hover:bg-violet-600 hover:scale-105 transform transition-all duration-200">
                         <h2 class="text-xl font-bold mb-2">Book Connect Application</h2>
                         <p class="mb-4"><strong>Overview:</strong> The Book Connect app offers a comprehensive list of books, allowing users to preview book details (such as author, genre, and image) and filter based on their preferences. It helps users discover and explore a wide variety of books.</p>
-                        <p class="mb-4"><strong>Skills Gained:</strong> This project honed my data management skills by organizing and filtering a large dataset, and I improved my ability to dynamically render content in the UI. JavaScript arrays and objects became critical tools for handling book data, while search and filtering functions enabled personalized user experiences.</p>
+                        <p class="mb-4"><strong>Skills Gained:</strong> For the "Book Connect" project, I utilized a <strong>Unit Testing approach</strong> to test individual functions and objects after refactoring. I wrote tests to ensure that the core features (book search, filtering, and rendering) continued to work as expected after applying abstraction and refactoring the code. Additionally, I conducted <strong>Functional Testing</strong> by manually verifying that the application’s UI and interaction logic remained intact. This helped ensure that the refactor improved code maintainability without breaking existing functionality.</p>
                         <a href="https://github.com/PearlPhahlane/CS20240132_wfo2407_A1_Pearl-Phahlane_DJS03.git" target="_blank">
                             <img src="../disk/assets/book-connect-App.png" alt="book-connect-app">
                         </a>
@@ -210,7 +238,7 @@
 
 <!--Footer-->
 
-    <footer class="bg-rose-950 text-white object-center p-3 justify-center items-center text-center dark:bg-slate-500 dark:text-zinc-900">I'm not just coding - I'm creating the future</footer>
+    <footer class="bg-rose-950 text-white object-center p-3 justify-center items-center text-center dark:bg-slate-500 dark:text-zinc-900">Shaping the future with code and QA testing.</footer>
     <script src="./script.js"></script>
 </body>
 </html>
