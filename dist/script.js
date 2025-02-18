@@ -102,30 +102,33 @@ document.addEventListener("DOMContentLoaded", function () {
   ); // Trigger when 50% of the element is visible
 
   // Select progress bars and set their target widths as data attributes
+  const progressJira = document.getElementById("progress-jira");
   const progressHtml = document.getElementById("progress-html");
+  const progressDevTools = document.getElementById("progress-dev-tools")
   const progressCss = document.getElementById("progress-CSS");
   const progressTailwind = document.getElementById("progress-tailwind");
-  const progressJavaScript = document.getElementById("progress-JS");
-  const progressReact = document.getElementById("progress-react");
+  const progressJavaScript = document.getElementById("progress-JS-react");
   const progressGit = document.getElementById("progress-GIT");
   
   
 
+  progressJira.setAttribute("data-target", "100");
   progressHtml.setAttribute("data-target", "100");
+  progressDevTools.setAttribute("data-target", "100");
   progressCss.setAttribute("data-target", "100");
   progressTailwind.setAttribute("data-target", "85");
   progressJavaScript.setAttribute("data-target", "85");
-  progressReact.setAttribute("data-target", "50");
   progressGit.setAttribute("data-target", "100");
 
 
 
   // Observe each progress bar
+  observer.observe(progressJira);
   observer.observe(progressHtml);
+  observer.observe(progressDevTools);
   observer.observe(progressCss);
   observer.observe(progressTailwind);
   observer.observe(progressJavaScript)
-  observer.observe(progressReact);
   observer.observe(progressGit);
 });
 
